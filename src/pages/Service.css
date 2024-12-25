@@ -1,0 +1,213 @@
+* {
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+    font-family:'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
+   }
+   
+   :root {
+    --mainColor: #e77882;
+    --mainColorLight: #e77882;
+    --secondaryColor: #3a1616;
+    --textColor: #eee;
+   }
+   img{
+       margin-top:150px;
+       margin-left: 200px;
+   
+   }
+   header {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    height: 80px;
+    padding: 0 2rem;
+    background-color: var(--mainColor);
+    color: var(--textColor);
+   }
+   .title{
+    display: flex;
+    justify-content: space-around;
+    height: 80px;
+    padding: 0 2rem;
+    margin-right:300px;
+}
+.title h4{
+  width:80px;
+  text-align: center;
+ }
+.title .mail{
+  width:200px;
+}
+.title .num{
+  width:150px;
+}
+.navi2{
+  width:30%;
+  display: flex;
+  justify-content: space-around;
+  
+}
+
+   nav a {
+    margin: 0 1rem;
+    color: var(--textColor);
+    text-decoration: none;
+   }
+   
+   nav a:hover {
+    color: var(--secondaryColor);
+   }
+   
+   header .nav-btn {
+    padding: 5px;
+    cursor: pointer;
+    background: transparent;
+    border: none;
+    outline: none;
+    color: var(--textColor);
+    visibility: hidden;
+    opacity: 0;
+    font-size: 1.8rem;
+   }
+   
+   header div,
+   nav {
+    display: flex;
+    align-items: center;
+   }
+   .container4 {
+    height:95vh;
+    width:100%;
+    display:flex;
+    justify-content: center;
+    align-items: center;
+    background-image: url("./image/background2.jpg");
+    background-size: cover;
+    gap:50px;
+   }
+   .card3{
+    height:350px;
+    width:300px;
+    background-color:rgb(246, 239, 239);
+    border: 1px double rgb(246, 239, 239);
+    border-radius:10px;
+    color: black;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    gap:30px;
+    box-shadow:rgb(228, 113, 141, 1) 0px 20px 30px -10px;
+}
+.card4{
+    height:350px;
+    width:300px;
+    background-color:rgb(246, 239, 239);
+    border: 1px solid rgb(246, 239, 239);
+    border-radius:10px;
+    color: black;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    gap:20px;
+    box-shadow: rgb(228, 113, 141, 1) 0px 20px 30px -10px;
+}
+
+    .third {  
+            width: 130px;
+            height: 40px;
+            color: #fff;
+            border-radius: 5px;
+            padding: 10px 25px;
+            font-family: 'Lato', sans-serif;
+            font-weight: 500;
+            background: transparent;
+            cursor: pointer;
+            transition: all 0.3s ease;
+            position: relative;
+            display: inline-block;
+             box-shadow:inset 2px 2px 2px 0px rgba(255,255,255,.5),
+             7px 7px 20px 0px rgba(0,0,0,.1),
+             4px 4px 5px 0px rgba(0,0,0,.1);
+            outline: none;
+          }
+          
+          .third {
+            border: none;
+            background: rgb(251,33,117);
+              background: linear-gradient(0deg, rgba(251,33,117,1) 0%, rgba(234,76,137,1) 100%);
+              color: #fff;
+              overflow: hidden;
+          }
+          .third:hover {
+              text-decoration: none;
+              color: #fff;
+          }
+          .third:before {
+              position: absolute;
+              display: inline-block;
+              top: -180px;
+              left: 0;
+              width: 30px;
+              height: 100%;
+              background-color: #fff;
+              animation:  3s ease-in-out infinite;
+          }
+          .third:hover{
+            opacity: .8;
+          }
+          .login {
+            height:100vh;
+            width:100%;
+            background-image: url('./image/login.jpg');
+            background-size: cover;
+          }
+
+          .container5 {
+            font-size: 20px;
+            text-align: center;
+        }
+        .container5 .photos1 .img2{
+            margin:20px 20px 20px 20px;
+            padding:0px;
+
+        }
+        .container5 .photos2 .img3{
+          margin:20px 20px 20px 20px;
+          padding:0px;
+
+      }
+      .menu-btn{
+        color:#fff;
+        display:none;
+    }
+    @media only screen and (min-width: 400px) and (max-width: 1024px) {
+
+    .navi2{
+        width:100%;
+        display:none;
+        position:sticky;
+        color:#fff;
+    }
+    .menu-btn{
+        color:#fff; 
+        display:block;
+    }
+     .navi2{
+        position:absolute;
+        right:0;
+        width:100px;
+        border:1px solid rgb(201, 196, 196);
+        background-color: white;
+        flex-direction: column;
+        align-items: center;
+        top:50px;
+     }
+     .container4{
+        display:flex;
+        flex-direction: column;
+     }
+
+      }
